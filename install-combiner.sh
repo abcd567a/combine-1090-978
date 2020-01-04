@@ -36,8 +36,8 @@ echo "Writing code to config file combiner.conf"
 EOM
 sudo chmod 644 ${CONFIG_FILE}
 
-echo "Creating Service file combine.service"
-SERVICE_FILE=/lib/systemd/system/combine.service
+echo "Creating Service file combiner.service"
+SERVICE_FILE=/lib/systemd/system/combiner.service
 sudo touch ${SERVICE_FILE}
 sudo chmod 777 ${SERVICE_FILE}
 /bin/cat <<EOM >${SERVICE_FILE}
@@ -69,8 +69,10 @@ echo " "
 echo " "
 echo -e "\e[32m=======================\e[39m"
 echo -e "\e[32mINSTALLATION COMPLETED \e[39m"
-echo -e "\e[33m The combined output of dump1090-fa and dump978-fa is available at port 32005, format Beast\e[39m"
-echo -e "\e[33m In config files of Planeplotter, Flightradar24, Radarbox24, and Planefinder, \e[39m"
+echo -e "\e[33m The combined output of dump1090-fa and dump978-fa is  \e[39m"
+echo -e "\e[33m available at port 32005, format Beast\e[39m"
+echo -e "\e[33m In config files of Planeplotter, Flightradar24, \e[39m"
+echo -e "\e[33m Radarbox24, and Planefinder, \e[39m" 
 echo -e "\e[33m change port number from 30005 to 32005 \e[39m"
 echo -e ""
 echo -e "\e[32mTo see status\e[39m sudo systemctl status combiner"
