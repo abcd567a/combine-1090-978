@@ -61,7 +61,7 @@ WantedBy=default.target
 
 EOM
 
-sudo chmod 744 ${SERVICE_FILE}
+sudo chmod 644 ${SERVICE_FILE}
 sudo systemctl enable combiner
 sudo systemctl restart combiner
 
