@@ -79,7 +79,7 @@ echo -e "\e[32mTo see status\e[39m sudo systemctl status combiner"
 echo -e "\e[32mTo restart\e[39m    sudo systemctl restart combiner"
 echo -e "\e[32mTo stop\e[39m       sudo systemctl stop combiner"
 
-echo -e "\e[32mTo edit config\e[39m sudo nano /user/share/combiner-1090-978/combiner.conf"
+echo -e "\e[32mTo edit config\e[39m sudo nano /usr/share/combiner-1090-978/combiner.conf"
 echo -e "\e[32m=======================\e[39m"
 echo -e ""
 
